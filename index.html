@@ -1,0 +1,78 @@
+<!--
+    by Ventispurr#3222
+
+    @2021
+-->
+<html lang="en">
+    <style>
+        body{
+            font-family: 'Azeret Mono', monospace;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventis Games..</title>
+    <link rel="icon" href="resources/o.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="start" id="start">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p style="text-align: center;"><input type="image" src="resources/o.jpg" width="300" height="300" onclick="start()"></p>
+        <p style="text-align: center;font-size: 30px;">Click Image to start</p>
+        <p style="text-align: center;font-size: 30px;">If you have dark mode turn it off</p>
+        <p style="text-align: center;font-size: 30px;">(sorry)</p>
+    </div>
+    <div class="game1 center" id="game1">
+        <br><br><br>
+        <p style="text-align: center;font-size: 80px;">Find the imposter</p>
+        <p style="text-align: center;font-size: 80px;">(Easy)</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <input type="image" src="resources/o.jpg" width="200" height="200" onclick="wrong()">
+        <input type="image" src="resources/o.jpg" width="200" height="200" onclick="wrong()">
+        <input type="image" src="resources/0.png" width="200" height="200" onclick="next1()">
+        <input type="image" src="resources/o.jpg" width="200" height="200" onclick="wrong()">
+    </div>
+    <div class="game2 center" id="game2">
+        <br><br><br>
+        <p style="text-align: center;font-size: 80px;">Beat the captcha</p>
+        <p style="text-align: center;font-size: 80px;">(Medium)</p>
+        <br><br><br><br><br><br>
+        <img src="" width="300" height="100" id="captcha"><br><br>
+        <input type="text" id="captcha2" name="smh" value=""><br><br>
+        <button type="button" onclick="next2()">Make sure you typed your name down below too before you click this button</button>
+        <br><br>
+        <input type="text" id="name" name="smh2"><br><br>
+        <p style="text-align: center;font-size: 30px;">Also please type your name or Nickname :)</p><br><br>
+    </div>
+    <div class="game3 center" id="game3">
+        <br><br><br>
+        <p style="text-align: center;font-size: 80px;">Are you sure you want to end?</p>
+        <p style="text-align: center;font-size: 80px;">(Hard)</p>
+        <br><br><br><br><br><br>
+        <input type="image" src="resources/NO.jpg" width="200" height="200" onclick="wrong()">
+        <input type="image" src="resources/YES.png" width="200" height="200" onclick="yes()">
+    </div>
+    <div class="history center" id="history">
+        <br>
+        <p style="text-align: center;font-size: 80px;" id="endtext"></p>
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="rickroll"></iframe>
+        <p style="text-align: center;font-size: 40px;">Let's get Rick Astley's Never Gonna Give You Up to 7 bilion views!</p>
+    </div>
+<!--Audio-->
+<audio id="audio" autoplay style="display: none;" controls>
+        <source src="resources/au_report.mp3" type="audio/mpeg">
+            Your browser does not support the
+            <code>audio</code> element.
+</audio>
+</body>
+<!--Import-->
+<script src="js/main.js"></script>
+</html>
